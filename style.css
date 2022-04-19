@@ -1,0 +1,202 @@
+/* CSS for Pharma website */
+        body {
+            margin: 0;
+        }
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 20px; 
+          margin-top: -5px;
+          height: 400px; /* needs to be removed. Only for demonstration */
+        }
+        .column1 {
+          float: left;
+          width: 40%; 
+          margin-top: 20px;
+        }
+        .column2 {
+          float: left;
+          width: 60%; 
+          margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        .about-us{
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .copyright {
+            text-align: center;
+        }
+        .footer-basic {
+          padding:40px 0;
+          background-color:transparent;
+          color:#4b4c4d;
+        }
+
+        .footer-basic ul {
+          padding:0;
+          list-style:none;
+          text-align:center;
+          font-size:18px;
+          line-height:1.6;
+          margin-bottom:0;
+        }
+
+        .footer-basic li {
+          padding:0 10px;
+        }
+
+        .footer-basic ul a {
+          color:inherit;
+          text-decoration:none;
+          opacity:0.8;
+        }
+
+        .footer-basic ul a:hover {
+          opacity:1;
+        }
+
+        .footer-basic .social {
+          text-align:center;
+          padding-bottom:25px;
+        }
+
+        .footer-basic .social > a {
+          font-size:24px;
+          width:40px;
+          height:40px;
+          line-height:40px;
+          display:inline-block;
+          text-align:center;
+          border-radius:50%;
+          border:1px solid #ccc;
+          margin:0 8px;
+          color:inherit;
+          opacity:0.75;
+        }
+
+        .footer-basic .social > a:hover {
+          opacity:0.9;
+        }
+
+        .footer-basic .copyright {
+          margin-top:15px;
+          text-align:center;
+          font-size:13px;
+          color:#aaa;
+          margin-bottom:0;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+}
+        .accbtn {
+            background-color: #337ab7;
+            color: white;
+            width: 250px;
+            padding: 10px;
+            float: left;
+        }
+        button:hover {
+            color: #66b3ff ;
+        }
+
+        .text-block {
+          background-color: #66b3ff;
+          color: white;
+          height: 200px;
+          line-height: 50px;
+          text-align: center;
+        }
+
+
+        /*login css */
+         .box {
+            border:#666666 solid 1px;
+         }
+        .wrapper {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .wrapper2 {
+            padding: 80px;
+            width: 1300px;
+            margin: 0 auto;
+        }
+        input[type=submit] {
+            background-color: #337ab7;
+            color: white;
+            width: 80%;
+            padding: 10px;
+        }
+        .col-sm {
+            position: relative;
+            min-height: 1px;
+            float: left;
+            padding-left: 98px;
+        }
+        .col-sm1 {
+            position: relative;
+            min-height: 1px;
+            float: left;
+            margin-left:71px;
+        }
+        .col-md {
+            margin-left: 121px;
+            position: relative;
+            min-height: 1px;
+            padding-left: 8px;
+        }
+        .col-md-1 {
+            margin-left: 100px;
+            position: relative;
+            min-height: 1px;
+            padding-left: 8px;
+        }
+    .bttn_del{
+        background-color:#f7612f;
+    }
+    .bttn_order{
+        background-color:orange;
+    }
+        .vl {
+            margin-top: 20px;
+          border-left: 1px solid black;
+          height: 1000px;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, .column1, .column2 {
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px){
+            .col-sm {
+                width: 33.33333333%;
+                float: left;
+            }
+            .col-md{
+                width: 40%;
+                float: left;
+            }
+            .col-md-1 {
+                width: 30%;
+                float: left;
+            }
+}
